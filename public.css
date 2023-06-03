@@ -469,3 +469,10 @@ ul{
   #scrollUpButton:hover {
     background-color: #777; /* Change background color on hover */
   }
+.blink{
+    color: #fff;
+    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+  }
