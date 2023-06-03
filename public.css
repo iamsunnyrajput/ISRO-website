@@ -450,3 +450,22 @@ ul{
         max-width: 33.33%;
     }
 }
+
+#scrollUpButton {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    bottom: 20px; /* Position the button 20 pixels from the bottom */
+    right: 30px; /* Position the button 30 pixels from the right */
+    z-index: 99; /* Make sure the button appears above other elements */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 15px; /* Add padding */
+    border-radius: 10px; /* Add rounded corners */
+  }
+
+  #scrollUpButton:hover {
+    background-color: #777; /* Change background color on hover */
+  }
