@@ -17,7 +17,7 @@
 />
  </head> 
 <body>
-
+<button onclick="scrollToTop()" id="scrollUpButton" title="Go to top">ISRO</button>
 <header>
 <div class="menu">
       
@@ -421,6 +421,21 @@
     // And if we need scrollbar
     
   });
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollUpButton").style.display = "block";
+      } else {
+        document.getElementById("scrollUpButton").style.display = "none";
+      }
+    }
+
+    // Scroll to the top of the document when the user clicks the button
+    function scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
 </script>
 </body>
 </html>
